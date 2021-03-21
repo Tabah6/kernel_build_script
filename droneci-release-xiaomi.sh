@@ -36,7 +36,7 @@ err() {
 KERNEL_DIR=$PWD
 
 # The name of the Kernel, to name the ZIP
-KERNEL="STRIX"
+KERNEL="Love"
 
 # Kernel zip name type
 TYPE="stable"
@@ -93,7 +93,7 @@ PTTG=1
 	if [ $PTTG = 1 ]
 	then
 		# Set Telegram Chat ID
-		CHATID="-1001401913520"
+		CHATID="-1001420838318"
 	fi
 
 # Generate a full DEFCONFIG prior building. 1 is YES | 0 is NO(default)
@@ -119,7 +119,7 @@ LOG_DEBUG=0
 
 ## Set defaults first
 DISTRO=$(cat /etc/issue)
-export token="1206672611:AAGYbqxf4SN8f_Zsg3pa6nxOltilb3e8IN0"
+export token="1637383318:AAF8wOsJYhh1fdUE1uyMykJ7YMfaqrGOxzk"
 
 ## Check for CI
 if [ -n "$CI" ]
@@ -133,7 +133,7 @@ then
 	if [ -n "$DRONE" ]
 	then
 		export KBUILD_BUILD_VERSION="1"
-		export KBUILD_BUILD_HOST="DroneCI"
+		export KBUILD_BUILD_HOST="Love"
 		export CI_BRANCH=$DRONE_BRANCH
 	else
 		echo "Not presetting Build Version"
@@ -179,7 +179,7 @@ clone() {
 	fi
 
 	msg "|| Cloning Anykernel for tulip ||"
-	git clone --depth 1 https://github.com/STRIX-Project/AnyKernel3.git -b tulip
+	git clone --depth 1 https://github.com/Tabah6/AnyKernel3.git -b tulip
 
 	if [ $BUILD_DTBO = 1 ]
 	then
@@ -191,7 +191,7 @@ clone() {
 ##------------------------------------------------------##
 
 exports() {
-	export KBUILD_BUILD_USER="FiqriArdyansyah"
+	export KBUILD_BUILD_USER="Rahmad TabahS"
 	export ARCH=arm64
 	export SUBARCH=arm64
 
@@ -367,7 +367,7 @@ gen_zip() {
 cloneak() {
 	rm -rf "$KERNEL_DIR/AnyKernel3"
 	msg "|| Cloning Anykernel for tulip ||"
-	git clone --depth 1 https://github.com/STRIX-Project/AnyKernel3.git -b tulip
+	git clone --depth 1 https://github.com/Tabah6/AnyKernel3.git -b tulip
 }
 
 # Ship China firmware builds
@@ -451,7 +451,7 @@ mkdir "$KERNEL_DIR/out"
 cloneak1() {
 	rm -rf "$KERNEL_DIR/AnyKernel3"
 	msg "|| Cloning Anykernel for whyred ||"
-	git clone --depth 1 https://github.com/STRIX-Project/AnyKernel3.git -b whyred
+	git clone --depth 1 https://github.com/Tabah6/AnyKernel3.git -b whyred
 }
 
 ##------------------------------------------------------------------##
