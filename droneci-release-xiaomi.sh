@@ -36,7 +36,7 @@ err() {
 KERNEL_DIR=$PWD
 
 # The name of the Kernel, to name the ZIP
-KERNEL="Love"
+KERNEL="Gerimis"
 
 # Kernel zip name type
 TYPE="stable"
@@ -133,7 +133,7 @@ then
 	if [ -n "$DRONE" ]
 	then
 		export KBUILD_BUILD_VERSION="1"
-		export KBUILD_BUILD_HOST="Love"
+		export KBUILD_BUILD_HOST="RomanPicisan"
 		export CI_BRANCH=$DRONE_BRANCH
 	else
 		echo "Not presetting Build Version"
@@ -191,7 +191,7 @@ clone() {
 ##------------------------------------------------------##
 
 exports() {
-	export KBUILD_BUILD_USER="Rahmad TabahS"
+	export KBUILD_BUILD_USER="Roman Picisan"
 	export ARCH=arm64
 	export SUBARCH=arm64
 
