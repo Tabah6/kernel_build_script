@@ -36,7 +36,7 @@ err() {
 KERNEL_DIR=$PWD
 
 # The name of the Kernel, to name the ZIP
-KERNEL="Gerimis"
+KERNEL="Janda-Kembang"
 
 # Kernel zip name type
 TYPE="stable"
@@ -64,9 +64,9 @@ KERNELTYPE1=HMP
 KERNELRELEASE=stable
 
 # List the kernel version of each device
-VERSION=v4.0 # Tulip device
-VERSION1=v4.4 # Whyred device
-VERSION2=v1.1 # for HMP branch (tulip & whyred)
+VERSION=v1.0 # Tulip device
+VERSION1=v1.0 # Whyred device
+VERSION2=v1.0 # for HMP branch (tulip & whyred)
 
 # Show manufacturer info
 MANUFACTURERINFO="XiaoMI, Inc."
@@ -133,7 +133,7 @@ then
 	if [ -n "$DRONE" ]
 	then
 		export KBUILD_BUILD_VERSION="1"
-		export KBUILD_BUILD_HOST="RomanPicisan"
+		export KBUILD_BUILD_HOST="KNGCLX69"
 		export CI_BRANCH=$DRONE_BRANCH
 	else
 		echo "Not presetting Build Version"
