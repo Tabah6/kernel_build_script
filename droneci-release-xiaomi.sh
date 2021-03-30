@@ -133,7 +133,7 @@ then
 	if [ -n "$DRONE" ]
 	then
 		export KBUILD_BUILD_VERSION="1"
-		export KBUILD_BUILD_HOST="KNGCLX69"
+		export KBUILD_BUILD_HOST=""
 		export CI_BRANCH=$DRONE_BRANCH
 	else
 		echo "Not presetting Build Version"
@@ -191,7 +191,7 @@ clone() {
 ##------------------------------------------------------##
 
 exports() {
-	export KBUILD_BUILD_USER="Roman Picisan"
+	export KBUILD_BUILD_USER="KNGCLX69"
 	export ARCH=arm64
 	export SUBARCH=arm64
 
